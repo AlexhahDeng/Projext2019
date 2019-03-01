@@ -1,0 +1,12 @@
+<application>
+  <component name="FileTypeManager" version="17">
+    <extensionMap>
+      <mapping ext="klib" type="ARCHIVE" />
+      <mapping pattern="classes" type="Android Nine-Patch" />
+      <mapping pattern="hello" type="CLASS" />
+      <mapping pattern="main" type="JAVA" />
+      <mapping pattern="haha" type="JAVA" />
+      <mapping pattern="Diary" type="PLAIN_TEXT" />
+    </extensionMap>
+  </component>
+</application>
