@@ -1,0 +1,54 @@
+<--2019/01/04-->
+ Conclusion:
+now i can invoke python program through java not with jython. because jython
+does not allow python to import other libraries. so i use the third to invoke
+python program in this blog.
+https://blog.csdn.net/IT_xiao_bai/article/details/79074988
+
+now it seems that i have solved the main problem. however i have to consider the
+performance and time of this program and whether it is under the range of tolerance.
+
+things to be done are as follows:
+1. read the python code and try to understand them
+2.try to figure out what this website need to do
+3.find a nice outlook for the website
+4.figure out how to configure this on a server
+
+<--2019/01/05-->
+Conclusion:
+today, i can finally pass parameters. however, i still dont understand the theory why
+java can invoke python like this. i need to look up for more info i guess.
+and the parameter i need to pass i guess is an image. so there is a lot more to consider.
+
+
+<--2019/02/19-->
+conclusion:
+now i know how to trigger little python program in java, but it is still very hard for me
+to call the real program. i guess it is sth related to the time for this py to start and end.
+kind of like it is blocked and balabala.
+
+the function i want is sth like this:
+i upload the images and click a 'confirm' button then the image will be sent to the server,
+after that, this image will be a parameter for the py program. after the program runs and
+outputs some results, these will return.
+
+still a lot to learn :(
+
+<--2019/02/25-->
+conclusion:
+1，如果遇到乱码问题的话，可以首先查看以下java默认的文件保存编码格式，然后看一下使用的文本编辑器的编码格式，
+有时候vscode采用的的是utf8，但是java采用的是gbk，就会出现乱码，这个时候只要把utf8改成gbk的就行。
+2，现在利用runtime.exec来执行python程序搞不通，估计是因为那个分割的程序用时太久timeout了？或者是
+缓冲区满了？总而言之是程序的问题。现在只是运行python程序所以会这样，如果后期只是对一个图片进行处理，输入
+参数说不定还是可以用这个办法的。
+3，还有个办法，可以把python程序搞成api接口，这样可以直接调用，感觉也不错。
+
+
+<--2019/03/01-->
+conclusion:
+1、现在可以直接在java让这个python程序跑起来了！呼呼，可喜可贺！一开始没法跑起来的原因大概是，这个在python
+程序中由于引入的文件在同一个文件夹里，所以采用的是相对路径，但是java这个是找不到的。所以改成“绝对路径”就好了。
+此外，最后输出的图片是在当前文件夹里。
+2、还有个小问题，那就是原来python运行的时候会有输出，现在不知道跑到哪里去了？？？明明用了输出流来读取，但是啥
+也没有输出？被吃掉了？
+
