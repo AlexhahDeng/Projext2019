@@ -1,0 +1,11 @@
+<application>
+  <component name="libraryTable">
+    <library name="ojdbc7">
+      <CLASSES>
+        <root url="jar://F:/download_for_google/ojdbc7.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+  </component>
+</application>
